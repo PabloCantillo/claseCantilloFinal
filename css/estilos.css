@@ -1,0 +1,478 @@
+/* Inicio index.html */
+/*Inicio de grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; 
+}
+
+#header {
+  grid-area: header;
+  justify-self: stretch;
+  align-self: stretch; 
+}
+
+#main {
+  grid-area: main; 
+}
+
+#footer {
+  grid-area: footer;
+}
+  
+/* Fin de Grid */
+/* ================================================*/
+/*Inicio de la section Header*/
+/* Inicio de la navbar*/
+.navbar {
+  background-color: #FEA82F; 
+}
+ 
+.color-navbar {
+  color: #5c0000; 
+}
+
+.logo {
+  margin-left: 20px; 
+}
+  
+/* Fin de la navbar */
+/* ========================= */
+/*Inicio del header*/
+#body-background {
+  background-color: #F9E0AE;
+  font-family: 'ubuntu', sans-serif; 
+}
+  
+.titulo-header {
+  color: #5c0000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px; }
+  
+  nav ul li {
+    text-decoration: none;
+    padding: 0 2px;
+    margin-right: 2px;
+    font-size: 17px; }
+  
+  nav ul li a:hover {
+    background: linear-gradient(180deg, #5f0000 5%, #FEA82F 10%, #5f0000 15%, #FEA82F 20%, #5f0000 25%, #5f0000 75%, #FEA82F 80%, #5f0000 85%, #FEA82F 90%, #5f0000 95%); }
+  
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px; }
+  
+  /* Fin de la section Header */
+  /* ================================================*/
+  /*Inicio Main index*/
+
+  .usuario{
+
+    background-color: rgb(92, 0, 0);
+    color:#F9E0AE;
+    padding: 2%;
+}
+  /* Carousel */
+  #carouselExampleFade {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 10px; }
+  
+  .img-caro {
+    height: 400px; }
+  
+  /* Inicio de Section video*/
+  #video-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; }
+  
+  /* Fin section video */
+  /* Inicio section Card */
+  #card {
+    margin: 30px 1px 0px; }
+  
+  .imagen-anteojos, .imagen-lentes {
+    height: 300px; }
+  
+  .card-title {
+    color: #5c0000;
+    margin-top: 10px; }
+  
+  /*Fin Main index*/
+  /* ========================= */
+  /*Inicio Main Productos*/
+  .titulo-productos, .subtitulo-producto {
+    color: #5c0000;
+    margin: 30px 10px 30px; }
+  
+  .color-tipos, .tipos-anteojos, .tipos-lentes {
+    color: black;
+    margin-top: 2px; }
+  
+  #tabla-productos {
+    margin: 30px 10px 0px; }
+  
+  /*Fin Main Productos*/
+  /* ========================= */
+  /*Inicio Main Historia*/
+  #subtitulo-historia {
+    margin-left: 5px; }
+  
+  #main-optica, #main-oftalmologia {
+    width: 95%;
+    margin-bottom: 30px;
+    margin-left: 5px; }
+  
+  #main-optica {
+    margin-top: 20px; }
+  
+  .titulo-producto {
+    margin-left: 12px; }
+  
+  .color-historia {
+    color: #5c0000;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 12px; }
+  
+  .historia-color {
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 12px; }
+  
+  /*Fin Main Historia*/
+  /* ========================= */
+  /*Inicio Main Sucursales*/
+  #sucursales-main {
+    width: 80%;
+    margin: 10px; }
+  
+  .subtitulo-historia {
+    color: #5c0000;
+    margin: 5px;
+    text-align: center; }
+  
+  .historia-color {
+    color: black;
+    margin: 10px; }
+  
+  #mapa-tabla div {
+    display: inline-block;
+    margin-top: 20px; }
+  
+  /*Fin Main Sucursales*/
+  /* ========================= */
+  /*Inicio Main Contacto*/
+  #subtituloContacto {
+    margin: 10px 3px 15px; }
+  
+  #formulario {
+    margin-left: 3px;
+    margin-right: 2px;
+    margin-top: 30px; }
+  
+  /*Fin Main Contacto*/
+  /* ========================= */
+  /*Inicio Main Tienda*/
+  #titulo-tienda {
+    text-align: center;
+    margin-bottom: 20px; }
+  
+  #fila-1, #fila-2, #fila-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  
+  #fila-1 div, #fila-2 div, #fila-3 div {
+    margin: 6px;
+    padding: 6px; }
+  
+  #fila-1 div:hover, #fila-2 div:hover, #fila-3 div:hover {
+    margin: 6px;
+    padding: 6px;
+    transform: scale(1.1); }
+  
+  #fila-1 div a, #fila-2 div a, #fila-3 div a {
+    display: flex;
+    justify-content: center;
+    border: solid 4px black;
+    border-radius: 5px;
+    background-color: #fce300;
+    color: #5c0000;
+    text-decoration: none; }
+  
+  .receta, .sol, .lente-contacto {
+    width: 395px; }
+  
+  /*Fin Main Tienda*/
+  /* ================================================*/
+  /* Inicio Footer */
+  .redes-color {
+    color: #41111b;
+    text-decoration: none;
+    text-transform: uppercase; }
+  
+  .logo {
+    height: 40px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  
+  footer ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px; }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px; }
+  
+  footer ul li {
+    margin: 5px; }
+  
+  footer ul li a:hover {
+    margin: 0;
+    padding: 0; }
+  
+  footer ul li:hover {
+    transform: scale(1.15); }
+  
+  footer h5 {
+    color: #5c0000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 17px; }
+  
+  /* Fin footer */
+  /* ================================================*/
+  /* Media querie */
+  @media only screen and (max-width: 1024px) {
+    .imagen-lentes {
+      height: 200px; }
+    .imagen-anteojos {
+      height: 200px; }
+    #main-video {
+      display: flex;
+      justify-content: center;
+      width: 25%; }
+    #titulo-secundario {
+      text-align: center; }
+    #titulo-primero {
+      text-align: center; }
+    .receta, .sol, .lente-contacto {
+      width: 250px; } }
+  
+  /* =================== */
+  @media only screen and (max-width: 768px) {
+    .imagen-lentes {
+      height: 150px; }
+    .imagen-anteojos {
+      height: 150px; }
+    #main-video {
+      display: flex;
+      justify-content: center;
+      width: 25%; }
+    #titulo-secundario {
+      text-align: center; }
+    #titulo-primero {
+      text-align: center; }
+    .receta, .sol, .lente-contacto {
+      width: 200px; }
+    .mapa iframe {
+      max-width: 45rem;
+      align-items: center;
+      justify-items: center; }
+    .tabla-sucursales {
+      max-width: 45rem;
+      align-items: center;
+      justify-items: center; } }
+  
+  /* ==================== */
+  @media only screen and (max-width: 640px) {
+    .imagen-lentes {
+      height: 100px; }
+    .imagen-anteojos {
+      height: 100px; }
+    #main-video {
+      display: flex;
+      justify-content: center;
+      width: 25%; }
+    #titulo-secundario {
+      text-align: center; }
+    #titulo-primero {
+      text-align: center; }
+    .receta, .sol, .lente-contacto {
+      width: 150px; }
+    .mapa iframe {
+      max-width: 25rem; } }
+  
+  @media only screen and (max-width: 480px) {
+    .imagen-lentes {
+      height: 100px; }
+    .imagen-anteojos {
+      height: 100px; }
+    #main-video {
+      display: flex;
+      justify-content: center;
+      width: 25%; }
+    #titulo-secundario {
+      text-align: center; }
+    #titulo-primero {
+      text-align: center; }
+    .receta, .sol, .lente-contacto {
+      width: 100px; }
+    .mapa iframe {
+      max-width: 24rem; }
+    #tabla-productos {
+      font-size: 15px; } }
+  
+  @media only screen and (max-width: 410px) {
+    .imagen-lentes {
+      height: 100px; }
+    .imagen-anteojos {
+      height: 100px; }
+    #main-video {
+      display: flex;
+      justify-content: center;
+      width: 25%; }
+    #titulo-secundario {
+      text-align: center; }
+    #titulo-primero {
+      text-align: center; }
+    .receta, .sol, .lente-contacto {
+      width: 100px; }
+    .mapa iframe {
+      max-width: 15rem; }
+    .tabla-sucursales {
+      margin-right: 3px; }
+    #tabla-productos {
+      font-size: 13px; } }
+  
+@media only screen and (max-width: 375px) {
+  .imagen-lentes {
+    height: 100px; 
+  }
+  .imagen-anteojos {
+    height: 100px; 
+  }
+  #main-video {
+    display: flex;
+    justify-content: center;
+    width: 25%; 
+  }
+  #titulo-secundario {
+    text-align: center;
+  }
+  #titulo-primero {
+    text-align: center; }
+    .receta, .sol, .lente-contacto {
+      width: 100px; }
+    .mapa iframe {
+      max-width: 15rem; }
+    .tabla-sucursales {
+      margin-right: 3px; }
+    #tabla-productos {
+      font-size: 10px; 
+    } 
+  }
+  
+  /* Fin media querie */
+  /* ================================================*/
+  /*Inicio de variable de sass*/
+  h2 {
+    color: #5c0000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    margin-left: 5px; }
+  
+  h3 {
+    color: #5c0000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    margin-left: 5px; }
+  
+  h4 {
+    color: #5c0000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    margin-left: 5px; }
+  
+  h5 {
+    color: #5c0000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    margin-left: 5px; }
+  
+  h6 {
+    color: #5c0000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    margin-left: 5px; }
+  
+  /*Fin de la variable de sass*/
+
+  /* Registro */
+  form {
+    border: 5px solid #5c0000;
+    }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #5c0000;
+    box-sizing: border-box;
+  }
+  .icon {
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    color: #5c0000;
+  }
+  button {
+    background-color: #5c0000;
+    color: #fce300;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grab;
+    width: 48%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+  }
+  .container {
+    padding: 16px 0;
+    text-align:left;
+  }
+  span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+  }

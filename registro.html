@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio 8</title>
+        <!-- Link de css -->
+        <link rel="stylesheet" href="css/estilos.css">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
+        <link rel="manifest" href="registro.html">
+        <!-- Link de la fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <!-- Link bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="js/Usuario.class.js"></script>
+        <script src="js/indexRegistro.js"></script>
+        <script language="javascript" src="js/events/registoJS.js"></script>
+    </head>
+    <body id="body-background" class="grid-container">
+        <header id="header">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="public/img/logo.png" alt="" width="60" height="60" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-sm-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav d-flex">
+                            <li class="nav-item ">
+                                <a class="nav-link active text-warning bg-dark" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-warning bg-dark" href="registro.html">Registro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-warning bg-dark" href="pages/tienda.html">Tienda</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <p></p>
+            <h1 class="titulo-header" >Óptica Cantillo</h1>
+        </header>
+        
+        <main id="main">
+            <!--  Aqui ubicamos un carrousel donde se ven algunos modelos de anteojoss-->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div width: class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="public/carrousel/recetado1.svg" class="d-block w-100 img-caro" alt="recetado1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/carrousel/sol1.svg" class="d-block w-100 img-caro" alt="sol1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/carrousel/recetado2.svg" class="d-block w-100 img-caro" alt="recetado2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/carrousel/sol2.svg" class="d-block w-100 img-caro" alt="sol2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/carrousel/recetado3.svg" class="d-block w-100 img-caro" alt="recetado3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/carrousel/sol3.svg" class="d-block w-100 img-caro" alt="sol3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    
+            <section>
+                <button id="accionLista">Lista de usuarios</button>
+                <hr>
+                <form>
+                    <h1>Registro</h1>
+                    <div class="icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="formcontainer">
+                        <div class="container">
+                            <label for="uname"><strong>Nombre de Usuario</strong></label>
+                            <input type="text" placeholder="Ingrese un nombre de Usuario" name="uname" id="uname">
+                            <label for="mail"><strong>Correo Electrónico</strong></label>
+                            <input type="text" placeholder="Ingrese un correo electrónico" name="mail" id="mail">
+                            <label for="psw"><strong>Password</strong></label>
+                            <input type="password" placeholder="Ingrese un Password" name="psw" id="psw">
+                        </div>
+                            <button  id="crearCuentaBTN" ><strong>Crear Cuenta</strong></button>
+                        <div class="container" style="background-color: #eee">
+                        <label style="padding-left: 15px">
+                            <input type="checkbox"  checked name="remember"> Recuerda mis datos
+                        </label>
+                        <span class="psw"><a href="#">¿Olvidó su password?</a></span>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <ul>
+                <li>
+                    <a class="redes-color" href="https://www.instagram.com/" target="_blank"><img class="logo" src="public/logos/instagram.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a class="redes-color" href="https://www.facebook.com/" target="_blank"><img class="logo" src="public/logos/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a class="redes-color" href="https://www.whatsapp.com/" target="_blank"><img class="logo" src="public/logos/whatsapp.svg" alt="whatsapp"></a>
+                </li>
+                <li>
+                    <a class="redes-color" href="https://twitter.com/" target="_blank"><img class="logo" src="public/logos/gorjeo.svg" alt="twitter"></a>
+                </li>
+                <li>
+                    <a class="redes-color" href="https://www.youtube.com" target="_blank"><img class="logo" src="public/logos/youtube.svg" alt="youtube"></a>
+                </li>
+            </ul>
+            <h5>Todos los derechos estan reservados</h5>
+        </footer>
+    </body>
+        
+
+    <!-- Link JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</html>
+
+<script language="javascript">
+    definirEventos();
+</script>

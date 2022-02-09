@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:'Ubuntu', sans-serif;
+	background-color: #F9E0AE;
+}
+
+nav {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	padding: 0.5rem 1.5rem;
+	background-color: #FEA82F;
+	border-bottom: 1px solid #5c0000;
+}
+
+.carrito-container {
+	cursor: pointer;
+	border: 2px solid #5c0000;
+	border-radius: 4px;
+	padding: 0.5rem;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease-in-out;
+}
+
+.carrito-container:hover {
+	transition: all 0.3s ease-in-out;
+	transform: scale(1.05);
+}
+
+.carrito-container img {
+	width: 3.5rem;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+	grid-gap: 0.5rem;
+	margin: 10rem 1rem;
+}
+
+.producto {
+	position: relative;
+	display: flex;
+	border: 2px solid #5c0000;
+	border-radius: 4px;
+	background: #FEA82F;
+}
+
+.producto .info {
+	display: flex;
+	padding: 1rem;
+}
+
+.producto .info img {
+	width: 15vw;
+	margin-right: 1rem;
+}
+
+.producto button {
+	cursor: pointer;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	padding: 1rem;
+	border-radius: 4px;
+	background-color: blanchedalmond;
+	font-size: large;
+	transition: all 0.15s ease-in-out;
+}
+
+.producto button:disabled {
+	cursor: not-allowed;
+}
+
+.producto button:active {
+	transition: all 0.15s ease-in-out;
+	transform: scale(0.95);
+}
+
+h1{
+	color:#5c0000;
+}
+
+h3 {
+	margin: 0.5rem;
+	color:#5c0000;
+}
+
+table {
+	margin: 0.5rem 0.5rem 5rem 0.5rem;
+}
+
+td.header {
+	font-weight: 800;
+	width: 10rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+#modal button {
+	font-size: larger;
+	color: #F9E0AE;
+	background-color: #5c0000;
+	padding: 0.3rem 1rem;
+	border-radius: 4px;
+	transition: all 0.15s ease-in-out;
+}
+
+#modal button:active {
+	transition: all 0.15s ease-in-out;
+	transform: scale(0.95);
+}
+
+.total {
+	display: block;
+	margin-top: 1rem;
+	font-weight: 700;
+}
+
+#modal button.eliminar {
+	font-size: small;
+}
